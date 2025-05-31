@@ -5,4 +5,5 @@ The HR manager would like to better understand the working preferences of employ
 ### Steps followed 
 
 - Step 1 : Load data into Power BI Desktop, dataset is an Excel.
-- Step 2: Extract and transform data by combining data from multiple worksheets in the same Excel worksheet using Power Query.
+- Step 2: Extract and transform data by combining data from multiple worksheets in the same Excel worksheet using Power Query in Power BI.
+- Step 3: Create metrics using DAX()

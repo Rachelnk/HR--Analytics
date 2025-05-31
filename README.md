@@ -7,26 +7,18 @@ The HR manager would like to better understand the working preferences of employ
 - Step 1 : Load data into Power BI Desktop, dataset is an Excel.
 - Step 2: Extract and transform data by combining data from multiple worksheets in the same Excel worksheet using Power Query in Power BI.
 - Step 3: Create metrics using DAX(Data Analysis Expressions).
-    i. % of Work from Home
-      <ins> Formulas </ins>
+   #### i. % of Work from Home
+          <ins> Formulas </ins>
       **_ WFH Count = SUM('Final Data1'[WFH Count]) _**
-  **_WFH % = DIVIDE([WFH Count], [Present Day], 0)_**
-
-**_Total Working Days = 
-var totalDays = COUNT('Final Data1'[Value])
-var nonworkdays = CALCULATE(COUNT('Final Data1'[Value]), 'Final Data1'[Value] in { "HO", "WO"})
-RETURN_**
-
-**_totalDays-nonworkdays
-SL Count = SUM('Final Data1'[SL Count])
-
-SL % = DIVIDE([SL Count],[Total Working Days], 0)
-Present Day = 
-
- VAR Presentdays = CALCULATE(COUNT('Final Data1'[Value]), 'Final Data1'[Value]="P")
-
- RETURN
- Presentdays + [WFH Count]
-
-Presence % = DIVIDE([Present Day], 'Measure Table'[Total Working Days], 0)
-    ii. % of sick leave
+      **_ WFH % = DIVIDE([WFH Count], [Present Day], 0) _**
+      **_ Total Working Days = 
+      var totalDays = COUNT('Final Data1'[Value])
+      var nonworkdays = CALCULATE(COUNT('Final Data1'[Value]), 'Final Data1'[Value] in { "HO",        "WO"})
+      RETURN totalDays-nonworkdays _**
+  #### ii. % of sick leave _**
+      **_ SL Count = SUM('Final Data1'[SL Count]) _**
+      **_ SL % = DIVIDE([SL Count],[Total Working Days], 0) _**
+      **_ Present Day = VAR Presentdays = CALCULATE(COUNT('Final Data1'[Value]), 'Final     Data1'[Value]="P")
+      RETURN  Presentdays + [WFH Count] _**
+      **_ Presence % = DIVIDE([Present Day], 'Measure Table'[Total Working Days], 0)
+    

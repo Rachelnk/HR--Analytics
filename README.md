@@ -7,9 +7,8 @@ The HR manager would like to better understand the working preferences of employ
 - Step 1 : Load data into Power BI Desktop, dataset is an Excel.
 - Step 2: Extract and transform data by combining data from multiple worksheets in the same Excel worksheet using Power Query in Power BI.
 - Step 3: Create metrics using DAX(Data Analysis Expressions).
-   #### i. % of Work from Home
-          <ins> Formulas </ins>
-      **_ WFH Count = SUM('Final Data1'[WFH Count]) _**
+   #### i. % of Work from Home          
+      **_WFH Count = SUM('Final Data1'[WFH Count])_**
       **_ WFH % = DIVIDE([WFH Count], [Present Day], 0) _**
       **_ Total Working Days = 
       var totalDays = COUNT('Final Data1'[Value])

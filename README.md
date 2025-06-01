@@ -28,7 +28,7 @@ The HR manager would like to better understand the working preferences of employ
     * Work from home, (work from office) Presence, Sick leave overall daily percentages. 
 - Step 6 : Add three combo charts to show sick leave by date, work from home by date and presence by date.
   
-###Dashboards
+### Dashboards
 Click on the month chart to see the insights i.e. percentage of sick leave, work from home etc. 
 
              

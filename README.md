@@ -13,11 +13,11 @@ The HR manager would like to better understand the working preferences of employ
       * Total Working Days = var totalDays = COUNT('Final Data1'[Value])
          var nonworkdays = CALCULATE(COUNT('Final Data1'[Value]), 'Final Data1'[Value] in { "HO",        "WO"})
          RETURN totalDays-nonworkdays
-  #### ii. % of sick leave _**
+  #### ii. % of sick leave
       * SL Count = SUM('Final Data1'[SL Count])
       * SL % = DIVIDE([SL Count],[Total Working Days], 0)
-  #### iii. % of Employees Present per Day _**
+  #### iii. % of Employees Present (on-site) per Day 
       *Present Day = VAR Presentdays = CALCULATE(COUNT('Final Data1'[Value]), 'Final     Data1'[Value]="P")
-         RETURN  Presentdays + [WFH Count] _**
+         RETURN  Presentdays + [WFH Count]
       * Presence % = DIVIDE([Present Day], 'Measure Table'[Total Working Days], 0)
     

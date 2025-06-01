@@ -30,5 +30,10 @@ The HR manager would like to better understand the working preferences of employ
   
 ###Dashboards
 Click on the month chart to see the insights i.e. percentage of sick leave, work from home etc. 
+
              
+![1000020673](https://github.com/user-attachments/assets/98dde122-8641-4660-a4f2-77768d68e3c7)
+
+
     
+![1000020672](https://github.com/user-attachments/assets/f39bfac3-ea93-42c8-ac9f-1f1e989d6fd0)

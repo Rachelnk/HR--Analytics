@@ -20,4 +20,11 @@ The HR manager would like to better understand the working preferences of employ
       *Present Day = VAR Presentdays = CALCULATE(COUNT('Final Data1'[Value]), 'Final     Data1'[Value]="P")
          RETURN  Presentdays + [WFH Count]
       * Presence % = DIVIDE([Present Day], 'Measure Table'[Total Working Days], 0)
+  - Step 3 : Create a chart with the target months, April, May, June .
+  - Step 4 : Add three visual cards with work from home(WFH), (in office)presence,sick leave(SL) percentages.
+  - Step 5 : Add five tables showing
+             * Each employee's work from home, presence and sick leave percentages.
+             * Each employee's daily attendance(from the month of April to June)       whether they took a sick leave, worked from home or from the office.
+             * Work from home, (work from office) Presence, Sick leave overall daily percentages.
+             
     
